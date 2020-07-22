@@ -1,12 +1,10 @@
-let msg1 = document.querySelector('.msg1')
-let msg2 = document.querySelector('.msg2');
-let img = document.querySelector('img');
+const msg1 = document.querySelector('.msg1')
+const msg2 = document.querySelector('.msg2');
+const img = document.querySelector('img');
 
-let date = new Date();
-//let hours = date.getHours();
-let hours = 20
+const date = new Date();
+const hours = date.getHours();
 msg2.innerHTML = `Agora são ${hours} horas.`
-
 
 if (hours >= 0 && hours < 12) {
     msg1.innerHTML = "Bom dia!"
